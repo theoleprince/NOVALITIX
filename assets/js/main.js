@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Fermer le menu mobile lors du clic sur un lien
         const navLinks = navMenu.querySelectorAll('a');
         navLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(e) {
+                // Ne pas fermer si c'est un lien de dropdown
+                if (link.parentElement.classList.contains('dropdown')) {
+                    return;
+                }
                 if (window.innerWidth <= 768) {
                     navMenu.classList.remove('active');
                     const spans = mobileMenuToggle.querySelectorAll('span');
@@ -36,6 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Mobile dropdown toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const dropdownLink = dropdown.querySelector('a');
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
 });
 
 // ========================================

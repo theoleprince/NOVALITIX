@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ressources, guides et articles sur les agents IA et systèmes multi-agents - Novalitix.">
+    <title>Ressources - Novalitix</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .resource-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            transition: all var(--transition-base);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .resource-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary-light);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .resource-type.guide {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--secondary-color);
+        }
+
+        .resource-type.checklist {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--accent-color);
+        }
+
+        .resource-card h3 {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+
+        .resource-card p {
+            color: var(--text-secondary);
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .resource-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: var(--spacing-sm);
+        }
+
+        .coming-soon {
+            opacity: 0.6;
+            position: relative;
+        }
+
+        .coming-soon::after {
+            content: 'Bientôt disponible';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Novalitix</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="solutions/index.html">Solutions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="solutions/agents-conversationnels.html">Agents conversationnels</a></li>
+                        <li><a href="solutions/agents-operationnels.html">Agents opérationnels</a></li>
+                        <li><a href="solutions/systemes-multi-agents.html">Systèmes multi-agents</a></li>
+                    </ul>
+                </li>
+                <li><a href="/#expertise">Expertise</a></li>
+                <li><a href="integration.html">Intégration</a></li>
+                <li><a href="methodologie.html">Méthodologie</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 class="hero-title">Ressources & Guides</h1>
+                <p class="hero-subtitle">
+                    Guides pratiques, checklists et articles pour vous aider à comprendre et déployer des agents IA en production.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Guides -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Guides pratiques</h2>
+            <div class="grid grid-3">
+                <div class="resource-card coming-soon">
+                    <span class="resource-type guide">Guide</span>
+                    <h3>Choisir entre mono-agent et multi-agents</h3>
+                    <p>Comment déterminer si votre cas d'usage nécessite un seul agent ou un système multi-agents ? Les critères de décision expliqués.</p>
+                    <div class="resource-meta">
+                        <span>📖 15 min de lecture</span>
+                        <span>•</span>
+                        <span>Débutant</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type guide">Guide</span>
+                    <h3>Design d'un agent outillé (RAG, tools, policies)</h3>
+                    <p>Les fondamentaux pour concevoir un agent avec des capacités d'action : RAG, function calling, politiques de sécurité.</p>
+                    <div class="resource-meta">
+                        <span>📖 20 min de lecture</span>
+                        <span>•</span>
+                        <span>Intermédiaire</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type guide">Guide</span>
+                    <h3>Logs & observabilité (Langfuse, etc.)</h3>
+                    <p>Mettre en place une stratégie de logging et de monitoring pour vos agents en production avec les meilleurs outils.</p>
+                    <div class="resource-meta">
+                        <span>📖 25 min de lecture</span>
+                        <span>•</span>
+                        <span>Avancé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklists -->
+    <section class="section why-section">
+        <div class="container">
+            <h2 class="section-title">Checklists</h2>
+            <div class="grid grid-2">
+                <div class="resource-card coming-soon">
+                    <span class="resource-type checklist">Checklist</span>
+                    <h3>Agent IA en production : 20 points de contrôle</h3>
+                    <p>La checklist complète avant de déployer un agent en production : sécurité, performance, observabilité, conformité.</p>
+                    <div class="resource-meta">
+                        <span>📋 Checklist PDF</span>
+                        <span>•</span>
+                        <span>Tous niveaux</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type checklist">Checklist</span>
+                    <h3>RGPD & agents IA : ce qu'il faut prévoir</h3>
+                    <p>Les points de conformité RGPD à anticiper lors de la conception d'agents manipulant des données personnelles.</p>
+                    <div class="resource-meta">
+                        <span>📋 Checklist PDF</span>
+                        <span>•</span>
+                        <span>Tous niveaux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Articles & Insights</h2>
+            <div class="grid grid-3">
+                <div class="resource-card coming-soon">
+                    <span class="resource-type">Article</span>
+                    <h3>Pourquoi 80% des interactions B2B sont devenues digitales</h3>
+                    <p>Analyse des données Gartner sur l'évolution du parcours d'achat B2B et les implications pour les fournisseurs de solutions.</p>
+                    <div class="resource-meta">
+                        <span>📰 8 min de lecture</span>
+                        <span>•</span>
+                        <span>Business</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type">Article</span>
+                    <h3>Acheteurs B2B : pourquoi le site doit convaincre avant le contact</h3>
+                    <p>Comment les acheteurs B2B choisissent désormais leur fournisseur avant même le premier contact commercial.</p>
+                    <div class="resource-meta">
+                        <span>📰 10 min de lecture</span>
+                        <span>•</span>
+                        <span>Business</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type">Article</span>
+                    <h3>Agents autonomes vs assistants : quelle différence ?</h3>
+                    <p>Clarification des concepts : qu'est-ce qu'un vrai agent autonome ? Comment se différencie-t-il d'un chatbot ou d'un assistant ?</p>
+                    <div class="resource-meta">
+                        <span>📰 12 min de lecture</span>
+                        <span>•</span>
+                        <span>Technique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cas d'usage -->
+    <section class="section proof-section">
+        <div class="container">
+            <h2 class="section-title">Cas d'usage</h2>
+            <div class="grid grid-3">
+                <div class="resource-card coming-soon">
+                    <span class="resource-type guide">Cas d'usage</span>
+                    <h3>Support interne</h3>
+                    <p>Comment un système multi-agents peut traiter les demandes de support interne, router vers les bonnes équipes et apprendre des résolutions.</p>
+                    <div class="resource-meta">
+                        <span>📖 15 min de lecture</span>
+                        <span>•</span>
+                        <span>Cas réel anonymisé</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type guide">Cas d'usage</span>
+                    <h3>Analyse & reporting</h3>
+                    <p>Agent d'analyse qui connecte plusieurs sources de données, détecte les tendances et génère des rapports automatisés.</p>
+                    <div class="resource-meta">
+                        <span>📖 18 min de lecture</span>
+                        <span>•</span>
+                        <span>Cas réel anonymisé</span>
+                    </div>
+                </div>
+
+                <div class="resource-card coming-soon">
+                    <span class="resource-type guide">Cas d'usage</span>
+                    <h3>Automatisation ops</h3>
+                    <p>Système multi-agents qui orchestre des tâches back-office complexes avec validation humaine aux étapes critiques.</p>
+                    <div class="resource-meta">
+                        <span>📖 20 min de lecture</span>
+                        <span>•</span>
+                        <span>Cas réel anonymisé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Lead magnet -->
+    <section class="section">
+        <div class="container">
+            <div class="content-block">
+                <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: var(--spacing-2xl); max-width: 700px; margin: 0 auto;">
+                    <h2 style="margin-bottom: var(--spacing-md);">Recevez nos prochaines ressources</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--spacing-lg);">
+                        Nous publierons progressivement ces guides et cas d'usage. Laissez-nous votre email pour être notifié.
+                    </p>
+                    <form style="display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                        <input
+                            type="email"
+                            placeholder="votre.email@entreprise.fr"
+                            style="flex: 1; min-width: 250px; padding: 0.875rem; background: var(--bg-darker); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 1rem;"
+                        >
+                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    </form>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--spacing-sm); margin-bottom: 0;">
+                        Pas de spam. Uniquement des ressources utiles. Désinscription à tout moment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Novalitix</h4>
+                    <p>Ingénierie agentique pour environnements réels.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="solutions/agents-conversationnels.html">Agents conversationnels</a></li>
+                        <li><a href="solutions/agents-operationnels.html">Agents opérationnels</a></li>
+                        <li><a href="solutions/systemes-multi-agents.html">Systèmes multi-agents</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="methodologie.html">Méthodologie</a></li>
+                        <li><a href="ressources.html">Ressources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="securite-rgpd.html">Sécurité & RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Novalitix. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

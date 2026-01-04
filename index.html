@@ -11,14 +11,21 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="/" class="logo">Novalitix</a>
+            <a href="index.html" class="logo">Novalitix</a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="fr/solutions/">Solutions</a></li>
+                <li class="dropdown">
+                    <a href="fr/solutions/index.html">Solutions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fr/solutions/agents-conversationnels.html">Agents conversationnels</a></li>
+                        <li><a href="fr/solutions/agents-operationnels.html">Agents opérationnels</a></li>
+                        <li><a href="fr/solutions/systemes-multi-agents.html">Systèmes multi-agents</a></li>
+                    </ul>
+                </li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="fr/integration.html">Intégration</a></li>
                 <li><a href="fr/methodologie.html">Méthodologie</a></li>
