@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Novalitix pour discuter de votre projet d'agents IA et systèmes multi-agents.">
+    <title>Contact - Novalitix</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.875rem;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-group.error input,
+        .form-group.error textarea,
+        .form-group.error select {
+            border-color: #f87171;
+        }
+
+        .success-message {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+            border: 1px solid var(--secondary-color);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin-top: var(--spacing-md);
+            color: var(--secondary-color);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .contact-info-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            height: 100%;
+        }
+
+        .contact-info-card h3 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-info-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .info-item-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../" class="logo">Novalitix</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="solutions/">Solutions</a></li>
+                <li><a href="/#expertise">Expertise</a></li>
+                <li><a href="integration.html">Intégration</a></li>
+                <li><a href="methodologie.html">Méthodologie</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h1 class="hero-title">Parlez-nous de votre besoin.</h1>
+                <p class="hero-subtitle">
+                    Nous répondons mieux avec du contexte. Plus votre description est précise, plus nous pourrons vous proposer une approche adaptée.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+                <!-- Formulaire -->
+                <div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email professionnel *</label>
+                            <input type="email" id="email" name="email" required placeholder="jean.dupont@entreprise.fr">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Entreprise *</label>
+                            <input type="text" id="company" name="company" required placeholder="Nom de votre entreprise">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role">Votre rôle</label>
+                            <select id="role" name="role">
+                                <option value="">Sélectionnez votre rôle</option>
+                                <option value="cto">CTO / Directeur Technique</option>
+                                <option value="cio">DSI / CIO</option>
+                                <option value="innovation">Responsable Innovation</option>
+                                <option value="product">Product Manager</option>
+                                <option value="ops">Responsable Ops / Support</option>
+                                <option value="founder">Fondateur / CEO</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="use-case">Décrivez votre cas d'usage *</label>
+                            <textarea id="use-case" name="use-case" required placeholder="Exemple : Nous souhaitons automatiser le traitement des demandes clients qui arrivent par email. Actuellement, notre équipe support doit qualifier manuellement 200+ demandes/jour et les router vers les bons services..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tools">Vos outils actuels (CRM, ERP, apps)</label>
+                            <input type="text" id="tools" name="tools" placeholder="Ex: Salesforce, HubSpot, API custom...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="constraints">Contraintes particulières</label>
+                            <textarea id="constraints" name="constraints" placeholder="Ex: Données sensibles (RGPD), environnement on-premise, délai court, budget limité..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Horizon de projet</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Sélectionnez un horizon</option>
+                                <option value="urgent">Urgent (< 1 mois)</option>
+                                <option value="short">Court terme (1-3 mois)</option>
+                                <option value="medium">Moyen terme (3-6 mois)</option>
+                                <option value="long">Long terme (6+ mois)</option>
+                                <option value="exploration">Phase d'exploration</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                            Envoyer ma demande
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informations complémentaires -->
+                <div>
+                    <div class="contact-info-card">
+                        <h3>Ce que nous attendons de vous</h3>
+                        <p style="margin-bottom: 1.5rem;">Pour vous répondre efficacement, aidez-nous à comprendre :</p>
+
+                        <div class="info-item">
+                            <div class="info-item-icon">🎯</div>
+                            <div>
+                                <strong>Votre activité</strong>
+                                <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem;">Quel est votre secteur et votre contexte métier ?</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-item-icon">⚙️</div>
+                            <div>
+                                <strong>Votre processus à automatiser</strong>
+                                <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem;">Quelle tâche ou processus souhaitez-vous améliorer ?</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-item-icon">🔧</div>
+                            <div>
+                                <strong>Vos outils existants</strong>
+                                <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem;">CRM, ERP, bases de données, APIs internes...</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-item-icon">🔒</div>
+                            <div>
+                                <strong>Vos contraintes</strong>
+                                <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem;">RGPD, données sensibles, infrastructure, délais...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card" style="margin-top: 1.5rem;">
+                        <h3>Ce qui se passe ensuite</h3>
+                        <ol style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.5rem;">
+                            <li>Nous étudions votre demande (sous 48h ouvrées)</li>
+                            <li>Nous vous contactons pour un échange de cadrage (30-45 min)</li>
+                            <li>Nous vous proposons une approche et un plan d'action</li>
+                            <li>Si cela vous convient, nous démarrons ensemble</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Novalitix</h4>
+                    <p>Ingénierie agentique pour environnements réels.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="solutions/agents-conversationnels.html">Agents conversationnels</a></li>
+                        <li><a href="solutions/agents-operationnels.html">Agents opérationnels</a></li>
+                        <li><a href="solutions/systemes-multi-agents.html">Systèmes multi-agents</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="methodologie.html">Méthodologie</a></li>
+                        <li><a href="ressources.html">Ressources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="securite-rgpd.html">Sécurité & RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Novalitix. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

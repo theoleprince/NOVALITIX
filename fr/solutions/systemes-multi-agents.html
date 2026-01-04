@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Systèmes multi-agents : quand un seul agent ne suffit pas. Orchestration, coordination et contrôle pour processus complexes.">
+    <title>Systèmes Multi-Agents - Novalitix</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../" class="logo">Novalitix</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../solutions/">Solutions</a></li>
+                <li><a href="/#expertise">Expertise</a></li>
+                <li><a href="../integration.html">Intégration</a></li>
+                <li><a href="../methodologie.html">Méthodologie</a></li>
+                <li><a href="../ressources.html">Ressources</a></li>
+                <li><a href="../a-propos.html">À propos</a></li>
+                <li><a href="../contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h1 class="hero-title">Systèmes multi-agents : quand un seul agent ne suffit pas.</h1>
+                <p class="hero-subtitle">
+                    Décomposez des problèmes complexes en rôles spécialisés, coordonnez les actions et garantissez la cohérence.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quand c'est utile -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Quand avez-vous besoin d'un système multi-agents ?</h2>
+            <div class="grid grid-3">
+                <div class="feature-card">
+                    <div class="icon-wrapper">🔄</div>
+                    <h3>Processus longs et multi-étapes</h3>
+                    <p>Lorsqu'une tâche nécessite plusieurs phases distinctes avec des compétences spécialisées à chaque étape.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">📚</div>
+                    <h3>Décisions à partir de sources multiples</h3>
+                    <p>Quand il faut agréger, analyser et croiser des informations provenant de plusieurs systèmes ou bases de données.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">✅</div>
+                    <h3>Séparation des rôles</h3>
+                    <p>Pour les tâches exigeant analyse, action et validation par des agents distincts avec des garde-fous clairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment on les conçoit -->
+    <section class="section why-section">
+        <div class="container">
+            <h2 class="section-title">Comment nous concevons les systèmes multi-agents</h2>
+            <div class="content-block" style="max-width: 900px;">
+                <div class="grid grid-2" style="text-align: left; margin-top: 2rem;">
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">🎯 Rôles</h3>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li><strong>Planner</strong> : décompose le problème en étapes</li>
+                            <li><strong>Executor</strong> : exécute les actions nécessaires</li>
+                            <li><strong>Reviewer</strong> : valide les résultats</li>
+                            <li><strong>Guardrails</strong> : applique les limites et contrôles</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">⚙️ Coordination</h3>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li><strong>Orchestration</strong> : coordination centralisée ou distribuée</li>
+                            <li><strong>Mémoire partagée</strong> : état cohérent entre agents</li>
+                            <li><strong>Gestion d'état</strong> : suivi de la progression</li>
+                            <li><strong>Reprises sur erreur</strong> : résilience et récupération</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">🛡️ Contrôle</h3>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li><strong>Validations</strong> : vérification à chaque étape</li>
+                            <li><strong>Limites d'action</strong> : périmètre contrôlé</li>
+                            <li><strong>Journalisation</strong> : traçabilité complète</li>
+                            <li><strong>Escalation</strong> : intervention humaine si nécessaire</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">📊 Observabilité</h3>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li><strong>Logs structurés</strong> : chaque action tracée</li>
+                            <li><strong>Métriques</strong> : performance et qualité</li>
+                            <li><strong>Dashboards</strong> : visualisation temps réel</li>
+                            <li><strong>Alertes</strong> : notification des anomalies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Example -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Exemple d'architecture</h2>
+            <div class="content-block">
+                <div style="background: var(--bg-card); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 2rem; max-width: 800px; margin: 0 auto;">
+                    <pre style="color: var(--text-secondary); overflow-x: auto; font-size: 0.9rem; line-height: 1.6;">
+┌─────────────────────────────────────────────┐
+│          Système Multi-Agents               │
+├─────────────────────────────────────────────┤
+│                                             │
+│  ┌──────────┐      ┌──────────┐            │
+│  │ Planner  │─────>│ Executor │            │
+│  │  Agent   │      │  Agent   │            │
+│  └──────────┘      └──────────┘            │
+│       │                 │                   │
+│       ▼                 ▼                   │
+│  ┌──────────┐      ┌──────────┐            │
+│  │ Reviewer │      │Guardrails│            │
+│  │  Agent   │      │  Agent   │            │
+│  └──────────┘      └──────────┘            │
+│       │                 │                   │
+│       └────────┬────────┘                   │
+│                ▼                            │
+│       ┌─────────────────┐                   │
+│       │ Shared Memory   │                   │
+│       │  & State Store  │                   │
+│       └─────────────────┘                   │
+│                                             │
+└─────────────────────────────────────────────┘
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Livrables -->
+    <section class="section proof-section">
+        <div class="container">
+            <h2 class="section-title">Ce que vous recevez</h2>
+            <div class="grid grid-2">
+                <div class="proof-card">
+                    <div class="proof-icon">📐</div>
+                    <h3>Schéma d'architecture</h3>
+                    <p>Diagrammes détaillés des flux, rôles et interactions entre agents avec documentation complète.</p>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-icon">📋</div>
+                    <h3>Spécification des agents</h3>
+                    <p>Description précise de chaque agent : rôle, outils disponibles, politiques d'action et limites.</p>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-icon">🔌</div>
+                    <h3>Stratégie d'intégration</h3>
+                    <p>Plan d'intégration avec vos API, applications et systèmes d'information existants.</p>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-icon">🧪</div>
+                    <h3>Tests & documentation d'exploitation</h3>
+                    <p>Scénarios de tests, procédures de déploiement, monitoring et plan de maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Cas d'usage typiques</h2>
+            <div class="grid grid-3">
+                <div class="solution-card">
+                    <h3>Traitement de demandes complexes</h3>
+                    <p>Analyse de la demande → Collecte d'informations → Exécution d'actions → Validation → Réponse coordonnée</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Processus d'approbation</h3>
+                    <p>Soumission → Vérification conformité → Analyse risques → Validation hiérarchique → Exécution</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Orchestration de workflows</h3>
+                    <p>Planification → Allocation de ressources → Exécution parallèle → Agrégation → Reporting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="content-block">
+                <h2 class="section-title">Vous avez un processus complexe à automatiser ?</h2>
+                <p class="lead-text">
+                    Décrivez-nous votre cas d'usage et nous évaluerons ensemble si une approche multi-agents est adaptée.
+                </p>
+                <div class="cta-center">
+                    <a href="../contact.html" class="btn btn-primary">Discuter de votre projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Novalitix</h4>
+                    <p>Ingénierie agentique pour environnements réels.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="agents-conversationnels.html">Agents conversationnels</a></li>
+                        <li><a href="agents-operationnels.html">Agents opérationnels</a></li>
+                        <li><a href="systemes-multi-agents.html">Systèmes multi-agents</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="../a-propos.html">À propos</a></li>
+                        <li><a href="../methodologie.html">Méthodologie</a></li>
+                        <li><a href="../ressources.html">Ressources</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="../securite-rgpd.html">Sécurité & RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Novalitix. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
